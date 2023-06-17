@@ -8,15 +8,18 @@ recognition.lang = 'pt-BR'
 recognition.start()
 
 
-recognition.addEventListerner('result', onSpeak)
+recognition.addEventListerner('result', onSpeak())
 
 function onSpeak(e) {
     chute = e.results[0][0].transcript
     exibeChuteNaTela(chute)
-    console.log(e.results[0][0].transcript)
+    
 
 }
 
 function exibeChuteNaTela(chute) {
-     elementoChute.innerHTML = `<div>Você disse</div> <span class="box">${chute} </span>`
+     elementoChute.innerHTML = `
+     <div>Você disse: </div> 
+     <span class="box"> ${chute} </span>`
+     console.log("estou funcionando")
 }
