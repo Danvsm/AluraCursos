@@ -18,5 +18,5 @@ function onSpeak(e) {
 }
 
 function exibeChuteNaTela(chute) {
-    return elementoChute.innerHTML = `<div>Você disse</div> <span class="box">${chute} </span>`
+     elementoChute.innerHTML = `<div>Você disse</div> <span class="box">${chute} </span>`
 }
