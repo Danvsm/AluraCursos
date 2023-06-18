@@ -32,9 +32,22 @@ h1 {
 
 }
 
+h2 {
+    font-size: 4em;
+}
+
 h3 {
     font-size: 1.9em;
     margin-top: 1.2rem;
+}
+
+.btn-jogar {
+    padding: 8px 15px;
+    border: 0;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-top: 20px;
+
 }
 
 .mensagem {
